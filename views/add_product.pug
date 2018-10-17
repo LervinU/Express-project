@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='../css/add_product.css')
+
+    form(action="/add_product", method='POST')
+      label Product name:
+      input(type='text', placeholder="Product name", name='product', required='')
+      label Quantity:
+      input(type='number', placeholder='Quantity', name='qty', required='')
+      label Value:
+      input(type='number', placeholder="Value of the product", name='val' step=".10", required='')
+      label Description:
+      textarea(widht='10' height='10', name='description', placeholder='Short comment' maxlength="30")
+      input(type='submit', value='Submit').btn
+
+       

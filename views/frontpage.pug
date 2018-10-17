@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='../css/frontpage.css')
+    .container
+      .listOfProducts
+        h2 Products
+        table
+          td.colunm
+            h4 ID
+          td.colunm
+            h4 Product
+          td.colunm
+            h4 Quantity
+          td.colunm
+            h4 Value
+          td.colunm
+            h4 Description
+          each product in productList
+            tr
+              td.row.data(str=product.id)= product.id
+              td.row.data(str=product.product_name)= product.product_name
+              td.row.data(str=product.quantity)= product.quantity
+              td.row.data(str=product.product_value)= product.product_value
+              td.row.data(str=product.description)= product.description
+
+    
+    script(src="../js/main.js")
+    
+          

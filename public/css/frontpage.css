@@ -1,0 +1,31 @@
+body {
+    margin-top: 5em;
+    
+}
+table, th, td {
+    
+    word-wrap: break-word;
+ }
+td {
+    padding: .6em;
+    border-radius: 1px;
+}
+
+ table {
+     width: 100%;
+     text-align: center;
+ }
+ 
+ .colunm {
+     background-color: darkgray;
+ }
+
+ .row {
+     background-color: lightgray;
+ }
+
+.container {
+     margin-left: 5em;
+     margin-right: 5em;
+ }
+
